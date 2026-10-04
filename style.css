@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17202a;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 700;
+    color: #006d77;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #006d77;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 45, 55, 0.92),
+            rgba(0, 109, 119, 0.65),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url("https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 720px;
+    color: white;
+}
+
+.tagline {
+    color: #a8dadc;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.primary {
+    background: #ffb703;
+    color: #17202a;
+}
+
+.primary:hover {
+    background: #ffd166;
+    transform: translateY(-2px);
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary:hover {
+    background: white;
+    color: #006d77;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 90px 7%;
+    text-align: center;
+}
+
+.section.light {
+    background: #f5fafb;
+}
+
+.section-tag {
+    color: #008c95;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #12343b;
+}
+
+.section-text {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    color: #5f6c72;
+    font-size: 17px;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.stat-card {
+    padding: 30px 20px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-7px);
+}
+
+.stat-card span {
+    font-size: 35px;
+}
+
+.stat-card h3 {
+    margin-top: 12px;
+    color: #006d77;
+}
+
+.stat-card p {
+    color: #777;
+}
+
+
+/* =========================
+   RELIEF CARDS
+========================= */
+
+.relief-grid {
+    max-width: 1100px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.relief-card {
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.relief-card:hover {
+    transform: translateY(-8px);
+}
+
+.relief-card div {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.relief-card h3 {
+    color: #006d77;
+    margin-bottom: 10px;
+}
+
+.relief-card p {
+    color: #666;
+}
+
+
+/* =========================
+   DONATION SECTION
+========================= */
+
+.donate {
+    padding: 100px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #003f46,
+            #006d77
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+.donate-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.donate .section-tag {
+    color: #a8dadc;
+}
+
+.donate h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.donate-content > p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.donation-box {
+    background: white;
+    color: #17202a;
+
+    max-width: 500px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.donation-box h3 {
+    color: #006d77;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.demo {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.donate-btn {
+    border: none;
+
+    padding: 14px 35px;
+
+    border-radius: 8px;
+
+    background: #ffb703;
+
+    color: #17202a;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.donate-btn:hover {
+    background: #ffd166;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 45px 7%;
+
+    background: #092f35;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #b8c8ca;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .stats,
+    .relief-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 6%;
+        min-height: 85vh;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .section h2,
+    .donate h2 {
+        font-size: 32px;
+    }
+
+    .stats,
+    .relief-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
