@@ -863,3 +863,18 @@ footer p {
     font-size: 13px;
     color: #89999b !important;
 }
+.hero-stat {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.hero-stat strong {
+    font-size: 24px;
+    color: #ffd166;
+}
+
+.hero-stat span {
+    margin-left: 8px;
+    opacity: 0.9;
+}
