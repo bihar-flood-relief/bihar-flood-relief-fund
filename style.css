@@ -760,3 +760,27 @@ footer p {
     }
 
 }
+/* Official News Card */
+
+.official-card {
+    border-top: 4px solid #006d77;
+}
+
+.news-date.official {
+    background: #dff4e4;
+    color: #176b35;
+}
+
+.news-disclaimer {
+    max-width: 900px;
+    margin: 35px auto 0;
+    padding: 18px 22px;
+
+    background: #f5fafb;
+    border-radius: 10px;
+
+    color: #667477;
+    font-size: 14px;
+
+    text-align: left;
+}
