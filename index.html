@@ -8,7 +8,16 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+function copyUPI() {
+    const upi = "9332130502@amazonpay";
 
+    navigator.clipboard.writeText(upi).then(() => {
+        document.getElementById("copy-message").textContent =
+            "✓ UPI ID copied!";
+    });
+}
+</script>
 <body>
 
     <!-- Navigation -->
