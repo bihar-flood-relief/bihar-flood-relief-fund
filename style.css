@@ -896,3 +896,51 @@ footer p {
     font-size: 14px;
     font-weight: 600;
 }
+.upi-section {
+    margin-top: 25px;
+}
+
+.upi-label {
+    font-weight: 700;
+    color: #006d77;
+    margin-bottom: 10px;
+}
+
+.upi-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px 12px;
+    border: 1px solid #d8e5e6;
+    border-radius: 8px;
+    background: #f7fafb;
+}
+
+.upi-box span {
+    font-size: 14px;
+    color: #344b4f;
+    word-break: break-all;
+}
+
+.upi-box button {
+    border: none;
+    background: #006d77;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upi-box button:hover {
+    background: #00545c;
+}
+
+.copy-message {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #16803c;
+}
