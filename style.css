@@ -959,12 +959,14 @@ footer p {
 }
 
 .share-message strong {
+    display: block;
     color: #006d77;
     font-size: 17px;
+    margin-bottom: 6px;
 }
 
 .share-message p {
-    margin-top: 6px;
+    margin: 0;
     color: #68777a;
     font-size: 14px;
     line-height: 1.5;
