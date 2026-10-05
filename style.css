@@ -950,3 +950,22 @@ footer p {
     color: #006d77;
     margin-bottom: 14px;
 }
+.share-message {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background: #eaf7f8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.share-message strong {
+    color: #006d77;
+    font-size: 17px;
+}
+
+.share-message p {
+    margin-top: 6px;
+    color: #68777a;
+    font-size: 14px;
+    line-height: 1.5;
+}
