@@ -944,3 +944,9 @@ footer p {
     font-size: 13px;
     color: #16803c;
 }
+.upi-label {
+    font-weight: 800;
+    font-size: 20px;
+    color: #006d77;
+    margin-bottom: 12px;
+}
