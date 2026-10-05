@@ -878,3 +878,21 @@ footer p {
     margin-left: 8px;
     opacity: 0.9;
 }
+.qr-section {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.donation-qr {
+    width: 240px;
+    max-width: 100%;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.qr-section p {
+    color: #68777a;
+    font-size: 14px;
+    font-weight: 600;
+}
