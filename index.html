@@ -400,7 +400,29 @@ function copyUPI() {
     </p>
 
 <div class="upi-section">
+
     <p class="upi-label">Donate via UPI</p>
+
+    <div class="amount-options">
+        <button onclick="selectAmount(100)">₹100</button>
+        <button onclick="selectAmount(500)">₹500</button>
+        <button onclick="selectAmount(1000)">₹1,000</button>
+        <button onclick="selectAmount(2000)">₹2,000</button>
+        <button onclick="selectAmount('other')">Other</button>
+    </div>
+
+    <div id="custom-amount-box" class="custom-amount-box">
+        <input
+            type="number"
+            id="custom-amount"
+            placeholder="Enter amount ₹"
+            min="1"
+        >
+    </div>
+
+    <button class="pay-now-btn" onclick="payNow()">
+        ❤️ Pay Now
+    </button>
 
     <div class="upi-box">
         <span id="upi-id">9332130502@amazonpay</span>
@@ -408,6 +430,7 @@ function copyUPI() {
     </div>
 
     <p id="copy-message" class="copy-message"></p>
+
 </div>
     <div class="share-message">
     <strong>Can't donate?</strong>
