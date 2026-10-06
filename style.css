@@ -1083,3 +1083,44 @@ footer p {
         box-sizing: border-box;
     }
 }
+/* Mobile donation section - full width */
+@media (max-width: 600px) {
+
+    .donate {
+        width: 100%;
+        padding: 40px 0 !important;
+    }
+
+    .donation-box {
+        width: calc(100vw - 24px) !important;
+        max-width: none !important;
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+        padding: 35px 20px !important;
+        box-sizing: border-box;
+    }
+
+    .qr-section {
+        width: 100%;
+    }
+
+    .donation-qr {
+        width: 240px;
+        max-width: 80%;
+    }
+
+    .upi-section {
+        width: 100%;
+    }
+
+    .upi-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .share-message,
+    .supporter-form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
