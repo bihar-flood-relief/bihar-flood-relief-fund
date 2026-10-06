@@ -461,6 +461,69 @@ function copyUPI() {
 
 
     <script src="script.js"></script>
+<script>
 
+let selectedAmount = 100;
+
+function selectAmount(amount) {
+
+    const buttons = document.querySelectorAll(".amount-options button");
+
+    buttons.forEach(button => {
+        button.classList.remove("selected");
+    });
+
+    event.target.classList.add("selected");
+
+    if (amount === "other") {
+        document.getElementById("custom-amount-box").style.display = "block";
+        selectedAmount = null;
+    } else {
+        document.getElementById("custom-amount-box").style.display = "none";
+        selectedAmount = amount;
+    }
+}
+
+function payNow() {
+
+    let amount = selectedAmount;
+
+    if (amount === null) {
+        amount = document.getElementById("custom-amount").value;
+    }
+
+    if (!amount || amount <= 0) {
+        alert("Please select or enter a donation amount.");
+        return;
+    }
+
+    const upiId = "9332130502@amazonpay";
+    const name = "Bihar Flood Relief";
+
+    const upiUrl =
+        "upi://pay?pa=" +
+        encodeURIComponent(upiId) +
+        "&pn=" +
+        encodeURIComponent(name) +
+        "&am=" +
+        encodeURIComponent(amount) +
+        "&cu=INR" +
+        "&tn=" +
+        encodeURIComponent("Bihar Flood Relief Donation");
+
+    window.location.href = upiUrl;
+}
+
+function copyUPI() {
+
+    const upi = "9332130502@amazonpay";
+
+    navigator.clipboard.writeText(upi).then(() => {
+        document.getElementById("copy-message").textContent =
+            "✓ UPI ID copied!";
+    });
+}
+
+</script>
 </body>
 </html>
