@@ -1088,29 +1088,33 @@ footer p {
 
     .donate {
         width: 100%;
-        padding: 40px 0 !important;
+        padding: 30px 12px !important;
+        box-sizing: border-box;
     }
 
     .donation-box {
-        width: calc(100vw - 24px) !important;
+        width: 100% !important;
         max-width: none !important;
-        margin-left: 12px !important;
-        margin-right: 12px !important;
-        padding: 35px 20px !important;
+        margin: 0 auto !important;
+        padding: 30px 18px !important;
         box-sizing: border-box;
+        border-radius: 18px;
+    }
+
+    .donation-qr {
+        width: 220px;
+        max-width: 100%;
+        height: auto;
     }
 
     .qr-section {
         width: 100%;
-    }
-
-    .donation-qr {
-        width: 240px;
-        max-width: 80%;
+        box-sizing: border-box;
     }
 
     .upi-section {
         width: 100%;
+        box-sizing: border-box;
     }
 
     .upi-box {
