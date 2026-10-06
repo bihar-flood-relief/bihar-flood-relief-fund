@@ -1021,7 +1021,41 @@ footer p {
     font-weight: 800;
     cursor: pointer;
 }
+.supporter-form {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f5fafb;
+    border-radius: 10px;
+    text-align: center;
+}
 
+.supporter-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #006d77;
+    margin-bottom: 8px;
+}
+
+.supporter-form p {
+    color: #68777a;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.supporter-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 11px 20px;
+    background: #006d77;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+.supporter-btn:hover {
+    background: #00545c;
+}
 .pay-now-btn:hover {
     transform: translateY(-2px);
 }
